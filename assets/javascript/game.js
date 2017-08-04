@@ -37,6 +37,7 @@ function reload(){
 function won(){
 	win++;
 	$("#win_div").text(win);
+	alert("you won!");
 	reload();
 };
 
@@ -44,6 +45,7 @@ function won(){
 function losses(){
 	lose++;
 	$("#lose_div").text(lose);
+	alert("you lose!");
 	reload();
 };
 
