@@ -1,0 +1,82 @@
+body
+{
+  background-image: url("../images/binding_dark.png");  
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#wrapper
+{
+  
+  background-image: url("../images/back.png");
+   width: 70%;
+}
+
+#header
+{  
+  font-size: 38px;  
+  text-align: center;  
+  padding: 5px;
+  color:#DDA0DD;
+  text-shadow: 2px 3px 3px black;
+  margin-top: -10px;
+  margin-bottom: -20px;   
+}
+
+#rules_div
+{  
+  width: 90%;
+  font-size: 20px;
+  margin-top: 20px;
+  
+}
+
+#rules_content
+{
+  color: #FFA500;
+  font-size: 16px;
+  background-image: url("../images/binding_dark.png");
+}
+.small_div
+{
+  
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.small
+{
+
+  height: 55px;
+  
+
+}
+.panel-success,.panel-danger
+{
+  width: 40%;
+  text-align: center;
+  
+}
+
+.panel-success
+{
+  margin-left: 60%;
+  
+}
+.panel-primary
+{
+  width: 40%;
+  text-align: center;
+  
+
+}
+.ran
+{
+  margin-left: 60%;
+}
+
+
+
+
+
+
+

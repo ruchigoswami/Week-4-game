@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Crystals Collector</title>
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap File -->
+	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--bootswatch File-->
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <!--javascript-->
+    <script  src="assets/javascript/game.js"></script>    
+</head>
+<body> 
+    <!--first row -->
+    <div class="container" id="wrapper" >
+        <div class="row">
+        	<div class="col-md-12 " id="header"><b>Crystals Collector</b></div>
+        </div>
+        <!--second row for rules-->
+        <div class="row">
+        <!--first column-->
+            <div class="col-md-1"></div> 
+            <div class="col-md-11">
+                <div class="panel panel-warning " id="rules_div">
+                  <div class="panel-heading" id="rules">Rules</div>
+                  <div class="panel-body" id="rules_content">
+                      <ol>
+                           <li>You will be given a random number of crystals at the start of the game.</li>
+                           <li>There are four crystals below. By cliking on a crystal you will add a specific amount of points to your total score.</li>
+                           <li>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number</li>
+                           <li>The value of each crystal is hidden from you until you click on it</li>
+                           <li>Each time when game will starts,the game will change the values of each crystal. </li>
+                      </ol>
+                  </div>
+                </div>
+            </div>            
+        </div> 
+        <!--third row for win and lose column -->   
+        <div class="row">            
+            <!--first column for win-->
+            <div class="col-md-6 " >   
+                <div class="panel panel-success">
+                    <div class="panel-heading small_div"> Win</div>     
+                    <div class="panel-body" id="win_div"></div> 
+                </div>
+            </div>
+            <!--second column for lose -->
+            <div class="col-md-6">    
+                <div class="panel panel-danger">
+                   <div class="panel-heading small_div"> Losses</div>                   
+                   <div class="panel-body" id="lose_div"></div>
+                </div> 
+            </div>            
+        </div> 
+        <!--fourth row for --> 
+        <div class="row three">            
+            <!--first column -->
+            <div class="col-md-6">   
+                <div class="panel panel-primary ran">
+                    <div class="panel-heading small_div">Random number</div>
+                    <div class="panel-body" id="random_div"></div> 
+                </div>
+            </div>
+            <!--second column -->
+            <div class="col-md-6">    
+                <div class="panel panel-primary">
+                    <div class="panel-heading small_div" > Your total score</div>
+                    <div class="panel-body small" id="your_div"></div>
+                </div> 
+            </div>            
+        </div>
+        <!--fifth row --> 
+        <div class="row" id="icon" >
+            <div class="col-md-2"></div>
+            <div class="col-md-2" id="blue_crystal"><img src="assets/images/blue.png" class="img-circle" width="120" height="100"></div>
+            <div class="col-md-2" id="red_crystal"><img src="assets/images/red.png" class="img-circle" width="120" height="100"></div>
+            <div class="col-md-2" id="green_crystal"><img src="assets/images/green.png" class="img-circle" width="120" height="100"></div>
+            <div class="col-md-2" id="yellow_crystal"><img src="assets/images/yellow.png" class="img-circle" width="120" height="100"></div>
+            <div class="col-md-2"></div>
+        </div>         
+    </div>
+</body>
+</html>
