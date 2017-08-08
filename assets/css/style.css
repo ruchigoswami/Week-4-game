@@ -73,7 +73,10 @@ body
 {
   margin-left: 60%;
 }
-
+#win_div,#lose_div,#random_div,#your_div
+{
+  background-image: url("../images/binding_dark.png");
+}
 
 
 

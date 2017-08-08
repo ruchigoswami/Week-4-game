@@ -29,6 +29,7 @@ function reload(){
 function won(){
 	win++;
 	$("#win_div").text(win);
+	alert("you won!");
 	reload();
 };
 
@@ -36,6 +37,7 @@ function won(){
 function losses(){
 	lose++;
 	$("#lose_div").text(lose);
+	alert("you lose!");
 	reload();
 };
 
@@ -64,5 +66,15 @@ function play_game(score){
          {
         	losses();
          }
+<<<<<<< HEAD
 };   
 });
+=======
+};
+
+
+
+
+   
+});
+>>>>>>> 3104b42bf37aba87a61827ff19189c8b218de570
