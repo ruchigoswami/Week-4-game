@@ -1,22 +1,14 @@
 $(document).ready(function() {
+  var theme = new Audio("win.mp3");
   // define global variables.	
   var random_num = Math.floor(Math.random() * 100) + 10 ;
      console.log("Random number :" +random_num);
   var your_score=0;   
   var win = 0;
   var lose = 0;
-  var red = Math.floor(Math.random() * 10) + 1 ;
-     console.log("Red :" +red);
-  var yellow = Math.floor(Math.random() * 10) + 1 ;
-     console.log("yellow :" +yellow);
-  var blue = Math.floor(Math.random() * 10) + 1 ;
-     console.log("blue :" +blue);
-  var green = Math.floor(Math.random() * 10) + 1 ;
-     console.log("Green :" +green);
-  $("#random_div").text(random_num);
   $("#win_div").text(win);
   $("#lose_div").text(lose);
-  $("#your_div").text(your_score);
+  reload();
 //this function reset the game for replay.
 function reload(){
   random_num = Math.floor(Math.random() * 100) + 10 ;
@@ -72,10 +64,5 @@ function play_game(score){
          {
         	losses();
          }
-};
-
-
-
-
-   
+};   
 });
