@@ -1,14 +1,23 @@
 $(document).ready(function() {
-  var theme = new Audio("win.mp3");
+  
   // define global variables.	
   var random_num = Math.floor(Math.random() * 100) + 10 ;
      console.log("Random number :" +random_num);
   var your_score=0;   
   var win = 0;
   var lose = 0;
+  var red = Math.floor(Math.random() * 10) + 1 ;
+     console.log("Red :" +red);
+  var yellow = Math.floor(Math.random() * 10) + 1 ;
+     console.log("yellow :" +yellow);
+  var blue = Math.floor(Math.random() * 10) + 1 ;
+     console.log("blue :" +blue);
+  var green = Math.floor(Math.random() * 10) + 1 ;
+     console.log("Green :" +green);
+  $("#random_div").text(random_num);
   $("#win_div").text(win);
   $("#lose_div").text(lose);
-  reload();
+  $("#your_div").text(your_score);
 //this function reset the game for replay.
 function reload(){
   random_num = Math.floor(Math.random() * 100) + 10 ;
@@ -24,12 +33,13 @@ function reload(){
       console.log("Green :" +green);
   $("#random_div").text(random_num);
   $("#your_div").text(your_score);
+      console.log("your score:" +your_score);
 };
 //This function increase the win count.
 function won(){
 	win++;
 	$("#win_div").text(win);
-	alert("you won!");
+  alert("you won!");
 	reload();
 };
 
@@ -37,7 +47,7 @@ function won(){
 function losses(){
 	lose++;
 	$("#lose_div").text(lose);
-	alert("you lose!");
+  alert("you lose!");
 	reload();
 };
 
@@ -66,15 +76,5 @@ function play_game(score){
          {
         	losses();
          }
-<<<<<<< HEAD
 };   
 });
-=======
-};
-
-
-
-
-   
-});
->>>>>>> 3104b42bf37aba87a61827ff19189c8b218de570
