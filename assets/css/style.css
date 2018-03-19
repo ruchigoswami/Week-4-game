@@ -3,6 +3,10 @@ body
   background-image: url("../images/binding_dark.png");  
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
+.panel-body {
+    padding: 15px;
+    color: #fff;
+}
 #wrapper
 {
   
